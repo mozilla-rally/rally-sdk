@@ -1,5 +1,9 @@
 # Unreleased changes
 
+[Full changelog](https://github.com/mozilla-rally/rally-sdk/compare/v0.7.0...master)
+
+# v0.7.0 (2021-09-29)
+
 
 # v0.7.0 (2021-09-29)
 
