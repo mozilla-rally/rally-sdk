@@ -1,6 +1,10 @@
 # Unreleased changes
 
-[Full changelog](https://github.com/mozilla-rally/rally-sdk/compare/v0.8.0...master)
+[Full changelog](https://github.com/mozilla-rally/rally-sdk/compare/v0.8.1...master)
+
+# v0.8.1 (2021-10-04)
+
+[Full changelog](https://github.com/mozilla-rally/rally-sdk/compare/v0.8.0...v0.8.1)
 
 * [18](https://github.com/mozilla-rally/rally-sdk/pull/18): Fix typo in enableEmulatorMode argument
 
