@@ -19595,7 +19595,7 @@ class Rally {
             if (!rallySite) {
                 throw new Error("Rally.initialize - Rally site is required when setting Firebase config.");
             }
-            if (!enableEmulatorMode) {
+            if (enableEmulatorMode === undefined) {
                 throw new Error("Rally.initialize - Emulator mode boolean is required when setting Firebase config.");
             }
         }
