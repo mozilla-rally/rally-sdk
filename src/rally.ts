@@ -81,6 +81,19 @@ export class Rally {
       throw new Error("Rally.initialize - Initialization failed, stateChangeCallback is not a function.")
     }
 
+    if (firebaseConfig) {
+      if (!rallySite) {
+        throw new Error("Rally.initialize - Rally site is required when setting Firebase config.");
+      }
+      if (!enableEmulatorMode) {
+        throw new Error("Rally.initialize - Emulator mode boolean is required when setting Firebase config.")
+      }
+    }
+
+    if (!studyId) {
+      throw new Error("Rally.initialize - Study ID is required.");
+    }
+
     this._enableDevMode = Boolean(enableDevMode);
     this._enableEmulatorMode = Boolean(enableEmulatorMode);
     this._rallySite = rallySite;
