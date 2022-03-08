@@ -19845,7 +19845,7 @@ class Rally {
                     }
                     break;
                 default:
-                    console.warn(`Rally._handleWebMessage - unexpected message type "${message.type}"`);
+                    console.debug(`Rally._handleWebMessage - unexpected message type "${message.type}"`);
             }
         });
     }
