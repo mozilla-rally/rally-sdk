@@ -44,7 +44,7 @@
     "@types/uuid": "^8.3.1",
     "@types/webextension-polyfill": "^0.8.0",
     "babel-jest": "^27.0.6",
-    "firebase": "^9.0.0-beta.7",
+    "firebase": "^9.6.6",
     "jest": "^27.0.6",
     "jest-transform-stub": "^2.0.0",
     "jest-webextension-mock": "^3.7.17",
