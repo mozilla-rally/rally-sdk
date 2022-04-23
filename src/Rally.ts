@@ -111,11 +111,11 @@ export class Rally {
   private async storeAttributionCodes() {
     const attribution = await browser.storage.local.get("attribution");
     if (!(Object.keys(attribution).length === 0 && attribution.constructor === Object)) {
-      console.debug("Attribution codes already set");
+      console.debug("Attribution codes already set:", attribution);
       return;
     }
 
-    // StudyIDs are in camelCase, store IDs are in hyphen-case.
+    // Study IDs are in camelCase, store IDs are in hyphen-case.
     const camelToHyphenCase = str => str.replace(/[A-Z]/g, letter => `-${letter.toLowerCase()}`);
     const storeId = camelToHyphenCase(this._options.studyId);
 
@@ -136,7 +136,7 @@ export class Rally {
       attribution[key] = url.searchParams.get(`utm_${key}`);
     });
     browser.storage.local.set({ attribution });
-    console.debug("Attribution codes stored");
+    console.debug("Attribution codes stored:", attribution);
   }
 
   private async authStateChangedCallback(user: User) {
