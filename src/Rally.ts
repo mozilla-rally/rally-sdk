@@ -133,7 +133,7 @@ export class Rally {
     const url = new URL(tabs[0].url);
 
     ["source", "medium", "campaign", "term", "content"].forEach((key) => {
-      attribution[key] = url.searchParams.get(`utm_${key}`);;
+      attribution[key] = url.searchParams.get(`utm_${key}`);
     });
     browser.storage.local.set({ attribution });
     console.debug("Attribution codes stored");
