@@ -27,7 +27,6 @@
       "^.+\\.js$": "babel-jest"
     },
     "setupFiles": [
-      "jest-webextension-mock",
       "<rootDir>/setupTests.js"
     ]
   },
